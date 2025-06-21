@@ -1,7 +1,11 @@
 import React, { PropsWithChildren } from "react";
 
-const Button: React.FC<PropsWithChildren> = ({ children }) => {
-  return <button>{children}</button>;
+export type Props = PropsWithChildren & {
+  onClick: React.MouseEventHandler;
+};
+
+const Button: React.FC<Props> = ({ onClick, children }) => {
+  return <button onClick={onClick}>{children}</button>;
 };
 
 export default Button;
