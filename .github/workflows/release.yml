@@ -43,9 +43,9 @@ jobs:
         uses: changesets/action@v1
         with:
           # This expects you to have a script called version which updates the lockfile after calling `changeset version`.
-          version: yarn version
+          version: yarn run version
           # This expects you to have a script called release which builds your packages and then calls `changeset publish`.
-          publish: yarn release
+          publish: yarn run release
           commit: "chore: release"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
