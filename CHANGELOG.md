@@ -1,5 +1,11 @@
 # @g_neal88/ui
 
+## 0.1.2
+
+### Patch Changes
+
+- bf47695: Modified registry url
+
 ## 0.1.1
 
 ### Patch Changes
