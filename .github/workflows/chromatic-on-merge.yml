@@ -7,9 +7,9 @@ on:
     branches:
       - feature/*
     paths:
-      - "ui/src/**.ts(x)"
-      - "ui/src/**.css"
-      - "ui/stories/**/*"
+      - "src/**.ts(x)"
+      - "src/**.css"
+      - "src/stories/**/*"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

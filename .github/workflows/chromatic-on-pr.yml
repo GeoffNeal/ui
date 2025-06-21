@@ -4,22 +4,12 @@ on:
   push:
     branches:
       - feature/*
-    # paths:
-    # Only run this workflow if the components have been updated
-    # - 'ui/src/**.ts(x)'
-    # - 'ui/src/**.css'
-    # - 'ui/stories/**/*'
   pull_request_target:
     types:
       - opened
       - edited
     branches:
       - feature/*
-    # paths:
-    # Only run this workflow if the components have been updated
-    # - 'ui/src/**.ts(x)'
-    # - 'ui/src/**.css'
-    # - 'ui/stories/**/*'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
