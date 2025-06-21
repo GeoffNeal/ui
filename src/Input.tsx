@@ -5,7 +5,7 @@ export type Props = {
 };
 
 const Input: React.FC<Props> = ({ onChange }) => {
-  return <input onChange={onChange} />;
+  return <input onChange={onChange} placeholder="Enter text" />;
 };
 
 export default Input;
