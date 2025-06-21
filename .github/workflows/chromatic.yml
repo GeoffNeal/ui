@@ -27,4 +27,4 @@ jobs:
         with:
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           projectToken: ${{ secrets.projectToken }}
-          workingDir: packages/ui
+          workingDir: .
