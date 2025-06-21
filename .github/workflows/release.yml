@@ -18,11 +18,11 @@ jobs:
         with:
           node-version: 20
           cache: "yarn"
-          registry-url: "https://www.npmjs.com"
+          registry-url: "https://registry.npmjs.org"
           scope: "@g_neal88"
       - name: Setup .yarnrc.yml
         run: |
-          yarn config set npmScopes.g_neal88.npmRegistryServer "https://www.npmjs.com"
+          yarn config set npmScopes.g_neal88.npmRegistryServer "https://registry.npmjs.org"
           yarn config set npmScopes.g_neal88.npmAlwaysAuth true
           yarn config set npmScopes.g_neal88.npmAuthToken $NPM_AUTH_TOKEN
         env:
