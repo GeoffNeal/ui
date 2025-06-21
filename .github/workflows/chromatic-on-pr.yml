@@ -1,0 +1,33 @@
+name: "Build feature branch to chromatic"
+
+on:
+  push:
+    branches:
+      - feature/*
+    # paths:
+    # Only run this workflow if the components have been updated
+    # - 'ui/src/**.ts(x)'
+    # - 'ui/src/**.css'
+    # - 'ui/stories/**/*'
+  pull_request_target:
+    types:
+      - opened
+      - edited
+    branches:
+      - feature/*
+    # paths:
+    # Only run this workflow if the components have been updated
+    # - 'ui/src/**.ts(x)'
+    # - 'ui/src/**.css'
+    # - 'ui/stories/**/*'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  chromatic:
+    uses: ./.github/workflows/chromatic.yml
+    secrets:
+      # 👇 Chromatic projectToken, refer to the manage page to obtain it.
+      projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}

@@ -1712,6 +1712,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chromatic@npm:^13.0.1":
+  version: 13.0.1
+  resolution: "chromatic@npm:13.0.1"
+  peerDependencies:
+    "@chromatic-com/cypress": ^0.*.* || ^1.0.0
+    "@chromatic-com/playwright": ^0.*.* || ^1.0.0
+  peerDependenciesMeta:
+    "@chromatic-com/cypress":
+      optional: true
+    "@chromatic-com/playwright":
+      optional: true
+  bin:
+    chroma: dist/bin.js
+    chromatic: dist/bin.js
+    chromatic-cli: dist/bin.js
+  checksum: 10c0/0f0a59964a5ec8b1550247e196ab3f85e84470e2275e44c2d4200e2c0a6f1734e4538d563fff788b126f44e868c16a6af6ebe1f5aefe781ff77b777b6bcb8b47
+  languageName: node
+  linkType: hard
+
 "chrome-trace-event@npm:^1.0.2":
   version: 1.0.4
   resolution: "chrome-trace-event@npm:1.0.4"
@@ -4345,6 +4364,7 @@ __metadata:
     "@storybook/addon-webpack5-compiler-swc": "npm:^3.0.0"
     "@storybook/react-webpack5": "npm:^9.0.12"
     "@types/react": "npm:^19"
+    chromatic: "npm:^13.0.1"
     react: "npm:^19.1.0"
     rimraf: "npm:^6.0.1"
     rollup: "npm:^4.44.0"

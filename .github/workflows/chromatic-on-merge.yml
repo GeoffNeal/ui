@@ -1,0 +1,25 @@
+name: "Build main branch to chromatic"
+
+on:
+  pull_request_target:
+    types:
+      - closed
+    branches:
+      - feature/*
+    paths:
+      - "ui/src/**.ts(x)"
+      - "ui/src/**.css"
+      - "ui/stories/**/*"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  chromatic:
+    # Run only if the closed PR was merged
+    if: github.event.pull_request.merged == true
+    uses: ./.github/workflows/chromatic.yml
+    secrets:
+      # 👇 Chromatic projectToken, refer to the manage page to obtain it.
+      projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
