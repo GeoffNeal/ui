@@ -1,5 +1,11 @@
 # @g_neal88/ui
 
+## 1.0.1
+
+### Patch Changes
+
+- 68c450b: Made package public
+
 ## 1.0.0
 
 ### Major Changes
