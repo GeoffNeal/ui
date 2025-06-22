@@ -9,6 +9,9 @@
   "files": [
     "dist/**/*"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": "20.x",
     "yarn": "4.x"
