@@ -30,7 +30,8 @@
     "version": "changeset version && yarn install"
   },
   "peerDependencies": {
-    "react": "^19.1.0"
+    "react": "^19.1.0",
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.5",
@@ -45,7 +46,11 @@
     "rimraf": "^6.0.1",
     "rollup": "^4.44.0",
     "storybook": "^9.0.12",
+    "styled-components": "^6.1.19",
     "tslib": "^2.8.1",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "classnames": "^2.5.1"
   }
 }
