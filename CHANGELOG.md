@@ -1,5 +1,11 @@
 # @g_neal88/ui
 
+## 1.1.0
+
+### Minor Changes
+
+- 38d4124: Added more advanced components
+
 ## 1.0.1
 
 ### Patch Changes
