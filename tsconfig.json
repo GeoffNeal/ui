@@ -9,10 +9,7 @@
     "outDir": "dist",
     "strict": true,
     "moduleResolution": "bundler",
-    "allowSyntheticDefaultImports": true,
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src"],
   "exclude": ["**/__test__/*"]

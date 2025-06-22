@@ -1,11 +1,9 @@
 import React from "react";
 
-export type Props = {
+export type InputProps = {
   onChange: React.ChangeEventHandler;
 };
 
-const Input: React.FC<Props> = ({ onChange }) => {
+export const Input: React.FC<InputProps> = ({ onChange }) => {
   return <input onChange={onChange} placeholder="Enter text" />;
 };
-
-export default Input;

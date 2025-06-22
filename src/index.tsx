@@ -1,2 +1,2 @@
-export * as button from "@/Button";
-export * as input from "@/Input";
+export * from "./Button";
+export * from "./Input";
