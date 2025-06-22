@@ -1,5 +1,11 @@
 # @g_neal88/ui
 
+## 1.0.0
+
+### Major Changes
+
+- 3b6eaf1: Updated the way components are imported
+
 ## 0.1.2
 
 ### Patch Changes
