@@ -5,10 +5,18 @@
   "type": "module",
   "main": "dist/ui.cjs.js",
   "module": "dist/ui.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "engines": {
     "node": "20.x",
     "yarn": "4.x"
   },
+  "keywords": [
+    "components",
+    "react"
+  ],
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c",

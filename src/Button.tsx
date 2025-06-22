@@ -1,11 +1,9 @@
 import React, { PropsWithChildren } from "react";
 
-export type Props = PropsWithChildren & {
+export type ButtonProps = PropsWithChildren & {
   onClick: React.MouseEventHandler;
 };
 
-const Button: React.FC<Props> = ({ onClick, children }) => {
+export const Button: React.FC<ButtonProps> = ({ onClick, children }) => {
   return <button onClick={onClick}>{children}</button>;
 };
-
-export default Button;
