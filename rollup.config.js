@@ -1,3 +1,5 @@
+import resolve from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 
 /** @returns {import('rollup').RollupOptions} */
@@ -15,6 +17,6 @@ export default {
       interop: "esModule",
     },
   ],
-  external: ["react"],
-  plugins: [typescript()],
+  external: ["react", "react-dom"],
+  plugins: [resolve(), commonjs(), typescript()],
 };
