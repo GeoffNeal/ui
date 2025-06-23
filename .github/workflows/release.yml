@@ -37,7 +37,9 @@ jobs:
           restore-keys: |
             root-node-modules-folder-
       - run: yarn install
-      # FIXME: run yarn lint and yarn test before releasing
+      # FIXME: run yarn lint before releasing
+      - name: Run tests
+        run: yarn test
       - name: Create Release Pull Request or Publish to Github Package Registry
         id: changesets
         uses: changesets/action@v1
