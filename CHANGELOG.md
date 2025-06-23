@@ -1,5 +1,11 @@
 # @g_neal88/ui
 
+## 1.2.1
+
+### Patch Changes
+
+- 6642af2: Fixed build error
+
 ## 1.2.0
 
 ### Minor Changes
