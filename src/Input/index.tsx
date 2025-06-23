@@ -3,10 +3,10 @@ import styled from "styled-components";
 import classNames from "classnames";
 
 // Components
-import { Form, FormCol, FormRow } from "./Form";
+import { Form, FormCol, FormRow } from "../Form";
 
 // Utils
-import { callAll } from "./utils";
+import { callAll } from "../utils";
 
 const InputContainer = styled.div`
   width: 100%;
