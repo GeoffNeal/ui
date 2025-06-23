@@ -1,5 +1,11 @@
 # @g_neal88/ui
 
+## 1.2.0
+
+### Minor Changes
+
+- 76b0673: Added setup for testing
+
 ## 1.1.0
 
 ### Minor Changes
