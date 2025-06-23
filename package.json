@@ -1,5 +1,9 @@
 {
   "name": "@g_neal88/ui",
+  "description": "A basic component library using React and styled-components",
+  "repository": {
+    "directory": "https://github.com/GeoffNeal/ui"
+  },
   "version": "1.2.1",
   "packageManager": "yarn@4.9.2",
   "type": "module",
