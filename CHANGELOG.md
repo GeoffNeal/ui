@@ -1,5 +1,11 @@
 # @g_neal88/ui
 
+## 1.2.2
+
+### Patch Changes
+
+- 6feaece: Updated README.md and added package.json info
+
 ## 1.2.1
 
 ### Patch Changes
